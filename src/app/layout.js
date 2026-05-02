@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import "./globals.css";
 import Navber from "@/components/shared/Navber";
+import Footer from "@/components/shared/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
       <body className={`${poppins.className} min-h-full flex flex-col`}>
         <Navber></Navber>
         {children}
+        <Footer></Footer>
       </body>
     </html>
   );
