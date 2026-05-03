@@ -4,7 +4,7 @@ import React from 'react';
 
 const Navber = () => {
     return (
-        <div className="border-b px-2">
+        <div className="shadow-lg px-2">
       <nav className=" flex justify-between items-center  py-3 max-w-7xl mx-auto w-full">
         <div className="flex gap-2 items-center">
           <Image
@@ -23,7 +23,7 @@ const Navber = () => {
             <Link href={"/"}>Home</Link>
           </li>
           <li>
-            <Link href={"/all-photos"}>All Photos</Link>
+            <Link href={"/all-photo"}>All Photos</Link>
           </li>
           <li>
             <Link href={"/pricing"}>Pricing</Link>
