@@ -1,10 +1,11 @@
 import { Separator } from "@heroui/react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { IoIosHeart } from "react-icons/io";
 import { MdFileDownload } from "react-icons/md";
 
-const Card = ({photo}) => {
+const Card = ({ photo }) => {
     return (
         <div>
             <div className="card bg-base-100 shadow-sm relative">
@@ -37,9 +38,11 @@ const Card = ({photo}) => {
                         </div>
                     </div>
                     <div className="card-actions">
-                        <button className="btn bg-white shadow-sm w-full rounded-full">
-                            Buy Now
-                        </button>
+                        <Link href={`/all-photo/${photo.id}`}>
+                            <button className="btn bg-white shadow-sm w-full rounded-full">
+                                Buy Now
+                            </button>
+                        </Link>
                     </div>
                 </div>
                 <div className="badge badge-soft text-black badge-accent absolute top-6 right-6">
